@@ -31,3 +31,22 @@ for (const link of links) {
     })
 }
 
+const header = document.querySelector("#header")
+const navHeight = header.offHeight
+
+window.addEventListener('scroll', function() {
+    if(window.scrollY >= navHeight) {
+// scroll é maior igual que a altura do header
+        header.classList.add('scroll')
+    } else {
+// menor que a linha do header 
+        header.classList.remove('scroll')
+    }
+})
+
+
+
+
+
+
+
